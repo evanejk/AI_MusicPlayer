@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.happynicetime.ai_musicplayer.PrimaryController">
+   <children>
+      <HBox alignment="CENTER" spacing="10.0">
+         <children>
+            <Button fx:id="skipSongButton" alignment="CENTER" mnemonicParsing="false" onAction="#skipSong" text="Skip" />
+            <Button fx:id="pauseSongButton" alignment="CENTER" mnemonicParsing="false" onAction="#pauseSong" text="Pause" />
+         </children>
+      </HBox>
+      <TextField fx:id="findSongText" />
+      <HBox alignment="CENTER" spacing="10.0">
+         <children>
+            <Button fx:id="findSongButton" mnemonicParsing="false" onAction="#findSong" text="Find Song" />
+            <Button mnemonicParsing="false" onAction="#findSongFast" text="Find Song Fast" />
+         </children>
+      </HBox>
+      <Label fx:id="songPlayingLabel" text="Song Playing" />
+      <ProgressBar fx:id="progressBar" onMouseClicked="#seek" prefHeight="42.0" prefWidth="420.0" progress="0">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin></ProgressBar>
+      <HBox alignment="CENTER" spacing="10.0">
+         <children>
+            <CheckBox fx:id="bassBoostCheck" alignment="CENTER" mnemonicParsing="false" onAction="#bassBoostClicked" text="Bass Boost" />
+            <Button mnemonicParsing="false" onAction="#bassUp" text="+ Bass" />
+            <Button mnemonicParsing="false" onAction="#bassDown" text="- Bass" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
