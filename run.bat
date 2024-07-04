@@ -1,1 +1,1 @@
-java -jar target\AI_MusicPlayer-1.0-SNAPSHOT-jar-with-dependencies.jar "C:\Users\incur\Desktop\songs"
+java -jar target\AI_MusicPlayer-1.0-SNAPSHOT-jar-with-dependencies.jar "songs"
